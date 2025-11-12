@@ -1,13 +1,22 @@
 # strdir
 
 **Canonical URL:**  
-[https://alexstevovich.com/r/strdir-nodejs](https://alexstevovich.com/r/strdir-nodejs)
+[https://alexstevovich.com/a/strdir-nodejs](https://alexstevovich.com/a/strdir-nodejs)
 
-<br>
+**Software URL:**  
+[https://midnightcitylights.com/software/strdir-nodejs](https://midnightcitylights.com/software/strdir-nodejs)
+
 Aggregates file contents in a directory into a string, with optional recursive walking and extension filtering.
-<br>
 
-## Usage
+---
+
+## Installation
+
+```sh
+npm install strdir
+```
+
+## Example
 
 ```js
 import strdir from 'strdir';
@@ -27,12 +36,6 @@ const syncContent = strdir.sync('./directory', {
     extensions: ['.md'],
 });
 console.log(syncContent); // Output: All .md file contents in the directory
-```
-
-## Installation
-
-```sh
-npm install strdir
 ```
 
 ## License
